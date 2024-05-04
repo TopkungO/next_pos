@@ -12,7 +12,6 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password);
     try {
       const result = await signIn("credentials", {
         redirect: false,
